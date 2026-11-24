@@ -1,0 +1,18 @@
+# Line endings: store and check out text files as LF on every OS.
+# Overrides each contributor's core.autocrlf, so the repo behaves the same everywhere.
+* text=auto eol=lf
+
+# Maven wrapper: the shell script must be LF (fails on Linux/Docker with CRLF),
+# the Windows script must be CRLF. Matches mvnw in every service folder.
+mvnw text eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Binary files: never convert or diff as text.
+*.pdf binary
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary

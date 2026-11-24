@@ -1,0 +1,42 @@
+# --- From Spring Initializr's default .gitignore (start.spring.io) ---
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS / Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+# --- Secrets (CLAUDE.md rule 5: secrets only from environment variables) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+
+# --- Personal Claude Code files (never commit) ---
+CLAUDE.local.md
+.claude/settings.local.json
+
+# --- OS and logs ---
+.DS_Store
+Thumbs.db
+*.log
