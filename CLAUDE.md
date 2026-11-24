@@ -57,10 +57,12 @@ Tests must pass with nothing running locally except Docker.
 - Never weaken, skip or delete a test to make a build pass.
 
 ## Workflow
-- `main` is protected: changes go through PRs, squash-merged. Branches: `feat/…`, `fix/…`,
-  `chore/…`, `docs/…`. Releases are tags (`v0.1.0`).
+- Full rules: CONTRIBUTING.md. `main` is protected: changes go through PRs, squash-merged.
+  Releases are tags (`v0.1.0`).
+- Branches: `<type>/<short-name>` (feat, fix, chore, docs, refactor, test, ci, build).
 - Every commit is signed off: `git commit -s` (DCO check must pass).
-- One task (WBS ID) per PR; put the ID in the PR title, e.g. `0.3: add modules and Modulith`.
+- One task (WBS ID) per PR. PR title: `<type>: <WBS ID> <summary>`, e.g.
+  `chore: 0.3 add modules and Modulith`.
 - New dependency → justify it in the PR description. Significant decision → new ADR.
 
 ## Definition of done
